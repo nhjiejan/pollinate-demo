@@ -32,7 +32,7 @@ cd flask-hello-world/charts
 helm install pollinate-demo pollinate-demo
 ```
 
-get the IP of the loadbalancer by searching `kubectl get sv`
+get the IP of the loadbalancer by searching `kubectl get svc`
 
 You will then be able to access your loadbalanced application, navigate to your browser and search `http://<IP>:5000`
 
