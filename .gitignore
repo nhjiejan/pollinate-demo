@@ -2,4 +2,6 @@ Infrastructure/.terraform
 Infrastructure/terraform.tfstate
 Infrastructure/terraform.tfstate.backup
 Infrastructure/terraform.lock.hcl
+Infrastructure/.terraform.lock.hcl
+Infrastructure/private_ssh_key
 secrets

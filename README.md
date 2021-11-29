@@ -14,7 +14,7 @@ This repository contains the source code, helm chart and terraform code for a lo
 
 
 ## Development
-The Makfile in this repo provides all the necessary targets to build the image from source, package in a docker image and run the image locally. Update the `REPO` variable in the Makefile to reflect your own dockerhub account
+The Makefile in the `app` directory provides all the necessary targets to build the image from source, package in a docker image and run the image locally. Update the `REPO` variable in the Makefile to reflect your own dockerhub account
 
 ### Build docker image
 ```make build```
@@ -41,7 +41,9 @@ Gather the outputs of the postgresql database and the kubernets cluster
 ### Deploy Application to AKS
 
 login using the az cli and download the credentials for the aks cluster:
-```az aks get-credentials --name pollinate_demo --resource-group polinatedemo```
+```
+az aks get-credentials --name pollinate_demo --resource-group polinatedemo
+```
 
 See docs in [`charts`](./charts/README.md) for helm deployment instructions
 

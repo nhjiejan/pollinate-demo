@@ -11,7 +11,7 @@
 |-----|------|---------|-------------|
 | replicaCount | Int | `3` |  |
 | image.repository | String | `nhjiejan/pollinate-demo` |  |
-| image.tag  | String | `latest` |  |
+| image.tag  | String | `0.0.3` |  |
 | db.name | String | `mydb` |  |
 | db.user | String | `psqladmin@polinatedemo-db` | Postgresql user name |
 | db.password  | String | `` | Postgresql password |
@@ -21,9 +21,9 @@
 ### Run DB migration manually
 docker run --rm -d --name flask-migration \
     -e POSTGRES_DB='mydb' \
-    -e POSTGRES_USER='psqladmin@polinatedemo-db' \
-    -e POSTGRES_PASSWORD='H@Sh1CoR3!' \
-    -e POSTGRES_URL='polinatedemo-db.postgres.database.azure.com:5432' \
+    -e POSTGRES_USER='psqladmin@asdasdasdas' \
+    -e POSTGRES_PASSWORD='asdasdasdasdasd' \
+    -e POSTGRES_URL='xxxxxyyyyzzzzzz:5432' \
     nhjiejan/pollinate-demo:0.0.1 bash -c 'flask db init && flask db migrate && flask db upgrade'
 
 ### Deploy helm chart
